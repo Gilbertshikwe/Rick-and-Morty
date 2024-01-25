@@ -1,6 +1,6 @@
 function getCharacters() {
     let content = document.getElementById('content');
-    fetch('https://rickandmortyapi.com/api/character')
+    fetch('https://rickandmortyapi.com/api/character/?')
         .then(res => res.json())
         .then(data => {
             let output = '';
